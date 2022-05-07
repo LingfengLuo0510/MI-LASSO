@@ -13,18 +13,18 @@ library(tidyr)
 
 
 #server
-sourceCpp("/home/lfluo/MissingDataVariableSelection/Source/grpregRe.cpp")
+sourceCpp("grpregRe.cpp")
 
-source("/home/lfluo/MissingDataVariableSelection/Source/orthogonalize_self.R")
-source("/home/lfluo/MissingDataVariableSelection/Source/multi_self.R")
-source("/home/lfluo/MissingDataVariableSelection/Source/setupLambdaSelf.R")
-source("/home/lfluo/MissingDataVariableSelection/Source/simul_MIGroupLasso.R")
-source("/home/lfluo/MissingDataVariableSelection/Source/grpsurv_self_multi.R")
+source("orthogonalize_self.R")
+source("multi_self.R")
+source("setupLambdaSelf.R")
+source("simul_MIGroupLasso.R")
+source("grpsurv_self_multi.R")
 
-source("/home/lfluo/MissingDataVariableSelection/Source/predict-grpsurv_self_multi.R")
-source("/home/lfluo/MissingDataVariableSelection/Source/loss-grpsurv_self_multi.R")
-source("/home/lfluo/MissingDataVariableSelection/Source/predict-grpsurv_self_multi.R")
-source("/home/lfluo/MissingDataVariableSelection/Source/cv-grpsurv_self_multi.R")
+source("predict-grpsurv_self_multi.R")
+source("loss-grpsurv_self_multi.R")
+source("predict-grpsurv_self_multi.R")
+source("cv-grpsurv_self_multi.R")
 
 
 FPFNSeSpLik=function(TrueBeta=TrueBeta,beta=beta){
